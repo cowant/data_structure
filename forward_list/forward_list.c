@@ -37,13 +37,15 @@ ForwardList Construct(size_t nums, ...) {
   return flist;
 }
 
-void Destruct(ForwardList flist) {
+void Destruct(ForwardList *flist) {
   // flist指向链表首节点
-  while (flist) {
-    ForwardList next = flist->next_;
-    free(flist);
-    flist = next;
+  ForwardList head = *flist;
+  while (head) {
+    ForwardList next = head->next_;
+    free(head);
+    head = next;
   }
+  *flist = NULL;
 }
 
 Bool Empty(ForwardList flist) {

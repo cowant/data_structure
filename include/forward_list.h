@@ -28,7 +28,7 @@ Node* NewNode(ElementType element);
 
 ForwardList Construct(size_t nums, ...);
 
-void Destruct(ForwardList flist);
+void Destruct(ForwardList *flist);
 
 Bool Empty(ForwardList flist);
 

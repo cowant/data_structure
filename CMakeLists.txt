@@ -9,7 +9,6 @@ target_sources(ds
   PRIVATE
     "forward_list/forward_list.c"
 )
-
 message(STATUS "PROJECT_SOURCE_DIR: " ${PROJECT_SOURCE_DIR})
 target_include_directories(ds
   PUBLIC
