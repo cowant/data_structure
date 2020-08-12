@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/forward_list_test.dir/forward_list/forward_list_test.cc.o  -o forward_list_test libds.a lib/libgmock.a lib/libgtest.a -lpthread 

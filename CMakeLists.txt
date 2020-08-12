@@ -8,6 +8,7 @@ add_library(ds "")
 target_sources(ds
   PRIVATE
     "forward_list/forward_list.c"
+    "binary_search_tree/binary_search_tree.c"
 )
 message(STATUS "PROJECT_SOURCE_DIR: " ${PROJECT_SOURCE_DIR})
 target_include_directories(ds
@@ -32,4 +33,5 @@ if(DS_BUILD_TESTS)
   endfunction(ds_test)
 
   ds_test("forward_list/forward_list_test.cc")
+  ds_test("binary_search_tree/binary_search_tree_test.cc")
 endif(DS_BUILD_TESTS)

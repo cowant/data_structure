@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/binary_search_tree.h
+stdio.h
+-
+stdlib.h
+-
+
+../include/forward_list.h
+stddef.h
+-
+
+/home/cowant/repo/data_structure/binary_search_tree/binary_search_tree.c
+binary_search_tree.h
+/home/cowant/repo/data_structure/binary_search_tree/binary_search_tree.h
+
+/home/cowant/repo/data_structure/forward_list/forward_list.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+stdarg.h
+-
+assert.h
+-
+forward_list.h
+/home/cowant/repo/data_structure/forward_list/forward_list.h
+

@@ -1,0 +1,78 @@
+Start testing: Aug 10 16:40 CST
+----------------------------------------------------------
+1/2 Testing: forward_list_test
+1/2 Test: forward_list_test
+Command: "/home/cowant/repo/data_structure/build/forward_list_test"
+Directory: /home/cowant/repo/data_structure/build
+"forward_list_test" start time: Aug 10 16:40 CST
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 6 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from Construct
+[ RUN      ] Construct.ForwardList
+[       OK ] Construct.ForwardList (0 ms)
+[----------] 1 test from Construct (0 ms total)
+
+[----------] 1 test from PushFront
+[ RUN      ] PushFront.ForwardList
+[       OK ] PushFront.ForwardList (0 ms)
+[----------] 1 test from PushFront (0 ms total)
+
+[----------] 1 test from PopFront
+[ RUN      ] PopFront.ForwardList
+[       OK ] PopFront.ForwardList (99 ms)
+[----------] 1 test from PopFront (99 ms total)
+
+[----------] 1 test from InsertAfter
+[ RUN      ] InsertAfter.ForwardList
+[       OK ] InsertAfter.ForwardList (83 ms)
+[----------] 1 test from InsertAfter (83 ms total)
+
+[----------] 1 test from EraseAfter
+[ RUN      ] EraseAfter.ForwardList
+[       OK ] EraseAfter.ForwardList (87 ms)
+[----------] 1 test from EraseAfter (87 ms total)
+
+[----------] 1 test from Remove
+[ RUN      ] Remove.ForwardList
+[       OK ] Remove.ForwardList (0 ms)
+[----------] 1 test from Remove (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 6 test suites ran. (269 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.27 sec
+----------------------------------------------------------
+Test Passed.
+"forward_list_test" end time: Aug 10 16:40 CST
+"forward_list_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: binary_search_tree_test
+2/2 Test: binary_search_tree_test
+Command: "/home/cowant/repo/data_structure/build/binary_search_tree_test"
+Directory: /home/cowant/repo/data_structure/build
+"binary_search_tree_test" start time: Aug 10 16:40 CST
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MakeEmpty
+[ RUN      ] MakeEmpty.BinarySearchTree
+[       OK ] MakeEmpty.BinarySearchTree (0 ms)
+[----------] 1 test from MakeEmpty (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"binary_search_tree_test" end time: Aug 10 16:40 CST
+"binary_search_tree_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 10 16:40 CST

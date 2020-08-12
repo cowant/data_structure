@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/binary_search_tree_test.dir/binary_search_tree/binary_search_tree_test.cc.o  -o binary_search_tree_test libds.a lib/libgmock.a lib/libgtest.a -lpthread 
