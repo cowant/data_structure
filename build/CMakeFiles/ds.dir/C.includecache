@@ -11,12 +11,20 @@ stdio.h
 -
 stdlib.h
 -
+assert.h
+-
 
 ../include/forward_list.h
 stddef.h
 -
 
 /home/cowant/repo/data_structure/binary_search_tree/binary_search_tree.c
+stdlib.h
+-
+string.h
+-
+errno.h
+-
 binary_search_tree.h
 /home/cowant/repo/data_structure/binary_search_tree/binary_search_tree.h
 

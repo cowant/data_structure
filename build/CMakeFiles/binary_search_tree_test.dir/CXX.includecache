@@ -11,6 +11,8 @@ stdio.h
 -
 stdlib.h
 -
+assert.h
+-
 
 ../third_party/googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

@@ -11,8 +11,7 @@ extern "C" {
 
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef int ElementType;
+#include <assert.h>
 
 // 树节点的前向声明
 struct TreeNode;
@@ -20,25 +19,20 @@ typedef struct TreeNode* SearchTree;
 typedef struct TreeNode* Position;
 
 // 初始化
-SearchTree MakeEmpty(SearchTree T);
+SearchTree BSTMakeEmpty(SearchTree t);
 
-Position Find(SearchTree T);
+Position BSTFindMin(SearchTree t);
+Position BSTFindMax(SearchTree t);
+Position BSTFind(SearchTree t, int val);
 
-Position FindMin(SearchTree T);
+SearchTree BSTInsert(SearchTree t, int val);
+SearchTree BSTErase(SearchTree t, int val);
 
-Position FindMax(SearchTree T);
-
-SearchTree Insert(ElementType X, SearchTree T);
-
-SearchTree Delete(ElementType X, SearchTree T);
-
-ElementType Retrieve(Position P);
-
-struct TreeNode {
-  ElementType element;
+typedef struct TreeNode {
+  int val;
   SearchTree left;
   SearchTree right;
-};
+} TreeNode;
 
 #ifdef __cplusplus
 }
