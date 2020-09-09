@@ -7,31 +7,26 @@
 #include "forward_list.h"
 
 //  可能返回NULL指针，交给用户处理
-static Node* NewNode(ElementType element) {
+static Node* NewNode(int val) {
   Node *p = (Node *)malloc(sizeof(Node));
   if (p != NULL) {
-    p->element = element;
+    p->val = val;
     p->next = NULL;
   }
   return p;
 }
 
 
-Position FLFind(ForwardList flist, ElementType element) {
-  while (flist) {
-    if (flist->element == element) {
-      return flist;
-    } else {
+Position FLFind(ForwardList flist, int val) {
+  while (flist && flist->val != val) {
       flist = flist->next;
-    }
   }
-
-  return NULL;
+  return flist;
 }
 
 // 在头部插入新节点
-ForwardList FLInsert(ForwardList flist, ElementType element) {
-  Node* node = NewNode(element);
+ForwardList FLInsert(ForwardList flist, int val) {
+  Node* node = NewNode(val);
   assert(node != NULL);
   node->next = flist;
   flist = node;
@@ -39,11 +34,11 @@ ForwardList FLInsert(ForwardList flist, ElementType element) {
   return flist;
 }
 
-// 删除链表中与element相等的首个元素
-ForwardList FLErase(ForwardList flist, ElementType element) {
+// 删除链表中与val相等的首个元素
+ForwardList FLErase(ForwardList flist, int val) {
   ForwardList* cur = &flist;
   while (*cur) {
-    if ((*cur)->element == element) {
+    if ((*cur)->val == val) {
       Node* tmp = *cur;
       *cur = tmp->next;
       free(tmp);

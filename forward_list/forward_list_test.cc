@@ -14,11 +14,11 @@ TEST(FLInsert, ForwardList) {
   flist = FLInsert(flist, 40);
   flist = FLInsert(flist, 50);
 
-  ASSERT_EQ(flist->element, 50);
-  ASSERT_EQ(flist->next->element, 40);
-  ASSERT_EQ(flist->next->next->element, 30);
-  ASSERT_EQ(flist->next->next->next->element, 20);
-  ASSERT_EQ(flist->next->next->next->next->element, 10);
+  ASSERT_EQ(flist->val, 50);
+  ASSERT_EQ(flist->next->val, 40);
+  ASSERT_EQ(flist->next->next->val, 30);
+  ASSERT_EQ(flist->next->next->next->val, 20);
+  ASSERT_EQ(flist->next->next->next->next->val, 10);
 }
 
 TEST(FLErase, ForwardList) {
@@ -35,9 +35,9 @@ TEST(FLErase, ForwardList) {
 
   flist = FLErase(flist, 30);
   flist = FLErase(flist, 50);
-  ASSERT_EQ(flist->element, 40);
-  ASSERT_EQ(flist->next->element, 20);
-  ASSERT_EQ(flist->next->next->element, 10);
+  ASSERT_EQ(flist->val, 40);
+  ASSERT_EQ(flist->next->val, 20);
+  ASSERT_EQ(flist->next->next->val, 10);
 }
 
 int main(int argc, char** argv) {

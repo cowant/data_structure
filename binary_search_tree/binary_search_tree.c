@@ -28,6 +28,8 @@ SearchTree BSTMakeEmpty(SearchTree t) {
   t->left = BSTMakeEmpty(t->left);
   t->right = BSTMakeEmpty(t->right);
   free(t);
+
+  return NULL;
 }
 
 Position BSTFind(SearchTree t, int val) {
@@ -62,12 +64,10 @@ SearchTree BSTInsert(SearchTree t, int val) {
   if (t == NULL) {
     t = NewNode(val);
     assert(t != NULL);
-  } else {
-    if (val > t->val) {
-      t->right = BSTInsert(t->right, val);
-    } else if (val < t->val) {
-      t->left = BSTInsert(t->left, val);
-    }
+  } else if (val > t->val) {
+    t->right = BSTInsert(t->right, val);
+  } else if (val < t->val){
+    t->left = BSTInsert(t->left, val);
   }
 
   return t;

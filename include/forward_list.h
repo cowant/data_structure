@@ -7,21 +7,19 @@ extern "C" {
 
 #include <stddef.h>
 
-typedef int ElementType;
-
 typedef struct Node {
-  ElementType element;
+  int val;
   struct Node *next;
 } Node;
 
 typedef Node* ForwardList;
 typedef Node* Position;
 
-Position FLFind(ForwardList flist, ElementType element);
+Position FLFind(ForwardList flist, int val);
 
-ForwardList FLInsert(ForwardList flist, ElementType element);
+ForwardList FLInsert(ForwardList flist, int val);
 
-ForwardList FLErase(ForwardList flist, ElementType element);
+ForwardList FLErase(ForwardList flist, int val);
 
 
 #ifdef __cplusplus
